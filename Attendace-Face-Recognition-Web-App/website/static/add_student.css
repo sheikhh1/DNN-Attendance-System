@@ -1,0 +1,34 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 5px 30px; 
+    grid-template-areas: 
+      "page_title_container page_title_container page_title_container page_title_container page_title_container"
+      "student_container student_container table_container table_container table_container"
+      "student_container student_container table_container table_container table_container"
+      "student_container student_container table_container table_container table_container"
+      "student_container student_container table_container table_container table_container"
+      "student_container student_container table_container table_container table_container"; 
+  }
+  .table_container { grid-area: table_container; 
+    border: 1px solid gray;
+    padding: 18px;
+    border-radius: 15px;}
+  .student_container {
+    grid-area: student_container; 
+    border: 1px solid gray;
+    padding: 18px;
+    border-radius: 15px;}
+  .page_title_container { grid-area: page_title_container; padding-top: 40px;}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+input[type=submit] {
+    font-weight: bold;
+    color: white;
+    float: right;
+}
+
